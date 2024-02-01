@@ -2,5 +2,5 @@
 
 ### Run
 ```
-wget -O https://raw.githubusercontent.com/Throdne/ArchBootstrap/main/bootstrap.sh URL && chmod +x bootstrap.sh && ./bootstrap.sh
+wget -O bootstrap.sh https://raw.githubusercontent.com/Throdne/ArchBootstrap/main/bootstrap.sh && chmod +x bootstrap.sh && ./bootstrap.sh
 ```
