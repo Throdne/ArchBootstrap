@@ -24,8 +24,9 @@ echo "Downloading chroot.sh..."
 wget https://raw.githubusercontent.com/Throdne/ArchBootstrap/main/chroot.sh -O /tmp/root.x86_64/root/chroot.sh
 chmod +x /tmp/root.x86_64/root/chroot.sh
 
-# Going int Arch Linux to complete the install
+# Going into Arch Linux to complete the install
 echo "chroot into Arch..."
+mount --bind /tmp/root.x86_64/ /tmp/root.x86_64/
 /tmp/root.x86_64/bin/arch-chroot /tmp/root.x86_64/ /root/chroot.sh
 
 echo "Arch Linux installation completed."
